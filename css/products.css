@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* =========================  ESTILOS HEADER  ========================= */
+#header {
+    background: url(../sources/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+.titulo {
+    font-size: 50px!important;
+}
+.hola {
+/*     border: 5px solid red; */
+    width: 80%;
+}
+
+/* =========================  ESTILOS CONTENIDO ========================= */
+.despues_header {
+    color: #ffce69;
+    font-size: 50px!important;
+}
+
+
+/* =========================  ESTILOS PRODUCTOS ========================= */
+
+/* .card {
+    position: relative;
+}
+.contain-image {
+    height: 50%;
+    background-color: #d9534f;
+} */
+
+.image {
+    height: 100% !important;
+    width: 100% !important;
+}
+/* .card .h-100 .p-1 .card-img-top .image{
+    width: 255px !important;
+    height: 233px !important;
+} */
+/* .imagen_tarjeta:hover {
+    background-image: linear-gradient(to top, #d9534f, #d9534f);
+} */
+
+.card-text {
+    font-family: 'Rubik', sans-serif;
+    word-spacing: -2.2px;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 500;
+}
+.precio {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.color_tarjeta {
+    background-color: #ffce69;
+}
+.color_boton {
+    background-color: #3bceda;
+}
+
+/* =========================  ESTILOS PIE DE PAGINA  ========================= */
+
+#contenedor_pie_pagina {background-color: rgb(0, 0, 0); color: #fff;}
+.quitar_raya a {
+    text-decoration: none;
+    color: rgb(255, 137, 68);
+}
+.quitar_raya a:hover {
+    text-decoration: underline;
+    color: rgb(101, 234, 255);
+}
+.politicas a {
+    text-decoration: none;
+    color: #fff;
+}
+.politicas a:hover {
+    text-decoration: underline;
+    color: rgb(255, 137, 68);
+}
+.lin {border-top: 1px solid rgb(255, 255, 255);}
+:root {
+    --icon-size: 40px;
+    --icon-padding: 5px 7px;
+    --icon-margin: 10px 20px;
+    --icon-text-shadow: 0 0 35px #0072ff, 0 0 75px #0072ff, 0 0 105px #0072ff, 0 0 140px #0072ff;
+    --col:  #00000080
+}
+#apple,#twitter,#github,#facebook {
+    font-size: var(--icon-size);
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px var(--col), 10px 1px 12px var(--col),
+        2px 2px 10px var(--col), 2px 2px 3px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col);
+    border-radius: 20px;
+    padding: var(--icon-padding);
+    margin: var(--icon-margin);
+    animation: animate 5s linear infinite;
+    text-shadow: var(--icon-text-shadow);
+}
+#apple {animation-delay: 0.1s;}
+#twitter {animation-delay: 0.4s;}
+#facebook {animation-delay: 0.9s;}
+#github {animation-delay: 0.5s;}
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg)
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
+}

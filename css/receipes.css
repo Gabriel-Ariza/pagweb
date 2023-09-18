@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+
+body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================  ESTILOS HEADER  ========================= */
+#header {
+    background: url(../sources/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+.titulo {
+    font-size: 50px!important;
+}
+.hola {
+/*     border: 5px solid red; */
+    width: 80%;
+}
+.despues_header {
+    color: #ffce69;
+    font-size: 50px!important;
+}
+/* =========================  MANEJO TARJETA Y CONTENEDOR 1  ========================= */
+#contenedor_receta1 {
+    background-color: rgb(255, 126, 208);
+}
+#card_receta1 {
+    border: none;
+    background-color: transparent;
+}
+.img_receta {
+    height: 396px;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
+}
+
+/* =========================  MANEJO TARJETA Y CONTENEDOR 2  ========================= */
+#contenedor_receta2 {
+    background-color: rgb(126, 236, 255);
+}
+#card_receta2 {
+    border: none;
+    background-color: transparent;
+}
+.img_receta2 {
+    height: 325px;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
+}
+
+/* =========================  MANEJO TARJETA Y CONTENEDOR 3  ========================= */
+#contenedor_receta3 {
+    background-color: rgb(255, 145, 220);
+}
+#card_receta3 {
+    border: none;
+    background-color: transparent;
+}
+.img_receta3 {
+    height: 348px;
+    width: 100%;
+    transition: height 0.3s ease-in-out;
+}
+
+/* =========================  ESTILOS Y DISEÑO DE LA PAGINA  ========================= */
+.listas_cards ul li {
+    border: none;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.numeracion {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.expanded {
+    height: 100%;
+    width: 100%;
+}
+
+/* =========================  ESTILOS PIE DE PAGINA  ========================= */
+
+#contenedor_pie_pagina {background-color: rgb(0, 0, 0); color: #fff;}
+.quitar_raya a {
+    text-decoration: none;
+    color: rgb(255, 137, 68);
+}
+.quitar_raya a:hover {
+    text-decoration: underline;
+    color: rgb(101, 234, 255);
+}
+.politicas a {
+    text-decoration: none;
+    color: #fff;
+}
+.politicas a:hover {
+    text-decoration: underline;
+    color: rgb(255, 137, 68);
+}
+.lin {border-top: 1px solid rgb(255, 255, 255);}
+:root {
+    --icon-size: 40px;
+    --icon-padding: 5px 7px;
+    --icon-margin: 10px 20px;
+    --icon-text-shadow: 0 0 35px #0072ff, 0 0 75px #0072ff, 0 0 105px #0072ff, 0 0 140px #0072ff;
+    --col:  #00000080
+}
+#apple,#twitter,#github,#facebook {
+    font-size: var(--icon-size);
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px var(--col), 10px 1px 12px var(--col),
+        2px 2px 10px var(--col), 2px 2px 3px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col);
+    border-radius: 20px;
+    padding: var(--icon-padding);
+    margin: var(--icon-margin);
+    animation: animate 5s linear infinite;
+    text-shadow: var(--icon-text-shadow);
+}
+/* #apple {animation-delay: 0.1s;}
+#twitter {animation-delay: 0.5s;}
+#facebook {animation-delay: 0.2s;}
+#github {animation-delay: 0.8s;}
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg)
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
+} */
+

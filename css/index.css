@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* =========================  ESTILOS HEADER  ========================= */
+#header {
+    background: url(../sources/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+.titulo {
+    font-size: 50px!important;
+}
+.hola {
+/*     border: 5px solid red; */
+    width: 80%;
+}
+.despues_header {
+    color: #ffce69;
+    font-size: 50px!important;
+}
+/* =========================  ESTILOS CONTENIDO ========================= */
+#contenedor {
+    height: 40vh;
+    width: 100%;
+    background: url(../sources/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#separador_footer {
+    height: 2vh;
+    background-color: #000000;
+}
+
+
+.carousel-item {
+    min-height: 400px;
+    max-height: 600px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.carousel-caption p {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* =========================  ESTILOS PIE DE PAGINA  ========================= */
+
+#separador_footer {
+    height: 2vh;
+    background-color: #000000;
+}
+@media(min-width: 900px) {
+    #separador_footer {
+        height: 8vh;
+        background-color: #181818;;
+    }
+}
+
+#contenedor_pie_pagina {background-color: rgb(0, 0, 0); color: #fff;}
+.quitar_raya a {
+    text-decoration: none;
+    color: rgb(255, 137, 68);
+}
+.quitar_raya a:hover {
+    text-decoration: underline;
+    color: rgb(101, 234, 255);
+}
+.politicas a {
+    text-decoration: none;
+    color: #fff;
+}
+.politicas a:hover {
+    text-decoration: underline;
+    color: rgb(255, 137, 68);
+}
+.lin {border-top: 1px solid rgb(255, 255, 255);}
+:root {
+    --icon-size: 40px;
+    --icon-padding: 5px 7px;
+    --icon-margin: 10px 20px;
+    --icon-text-shadow: 0 0 35px #0072ff, 0 0 75px #0072ff, 0 0 105px #0072ff, 0 0 140px #0072ff;
+    --col:  #00000080
+}
+#apple,#twitter,#github,#facebook {
+    font-size: var(--icon-size);
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px var(--col), 10px 1px 12px var(--col),
+        2px 2px 10px var(--col), 2px 2px 3px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col),
+        inset 2px 2px 10px var(--col), inset 2px 2px 10px var(--col);
+    border-radius: 20px;
+    padding: var(--icon-padding);
+    margin: var(--icon-margin);
+    animation: animate 5s linear infinite;
+    text-shadow: var(--icon-text-shadow);
+}
+/* #apple {animation-delay: 0.1s;}
+#twitter {animation-delay: 0.4s;}
+#facebook {animation-delay: 0.9s;}
+#github {animation-delay: 0.5s;}
+@keyframes animate {
+    from {
+        filter: hue-rotate(0deg)
+    }
+    to {
+        filter: hue-rotate(360deg)
+    }
+} */
