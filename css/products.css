@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 * {
@@ -99,7 +98,7 @@ body {
 }
 .quitar_raya a:hover {
     text-decoration: underline;
-    color: rgb(101, 234, 255);
+    color: #65eaff;
 }
 .politicas a {
     text-decoration: none;

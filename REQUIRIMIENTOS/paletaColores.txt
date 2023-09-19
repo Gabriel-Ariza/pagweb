@@ -1,0 +1,23 @@
+Paletas de colores usadas:
+
+    Index:
+        #ffffff
+        #000000
+
+    Productos:
+        #ffce69
+        #65eaff
+
+    recetas:
+        #181818
+        #ff8ffd
+        #65eaff
+
+    Ubicaciones:
+        #ffffff
+        #000000
+    
+    Contacto:
+        #181818
+        #ff2640
+        #ff5f72

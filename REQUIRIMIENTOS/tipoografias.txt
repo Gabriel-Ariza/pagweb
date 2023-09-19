@@ -1,0 +1,6 @@
+Tipografías usadas:
+
+    Titulos: 
+    Poppins weight 500 / 50px
+    Enunciados:
+    Rubik weight 500 / 22px

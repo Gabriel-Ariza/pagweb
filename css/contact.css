@@ -94,7 +94,7 @@ body {
 #contenedor_pie_pagina {background-color: rgb(0, 0, 0); color: #fff;}
 .quitar_raya a {
     text-decoration: none;
-    color: rgb(255, 95, 114)
+    color: #ff5f72;
 }
 .quitar_raya a:hover {
     text-decoration: underline;
