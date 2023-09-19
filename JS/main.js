@@ -8,6 +8,10 @@ function toggleRotacion() {
     icono.classList.toggle("rotado");
     estaRotado = !estaRotado;
 
+
+    barra.classList.toggle("menu_desplegado", estaRotado);
+    barra.classList.toggle("color_menu", !estaRotado);
+
     if (!estaRotado) {
         // Si el menú no está desplegado, ejecuta la animación "rubberBand" solo si no se ha ejecutado antes
         if (!animacionEjecutada) {
@@ -60,3 +64,17 @@ barra.addEventListener("mouseenter", () => {
         animacionEjecutada = false;
     }
 });
+
+/* const enlacesMenu = document.querySelectorAll("listado");
+
+enlacesMenu.forEach((enlace) => {
+    enlace.addEventListener("mouseenter", () => {
+        // Aplica una transformación cuando el mouse se acerca al enlace
+        enlace.style.transform = "translateY(100px)"; // Cambia la distancia según tus preferencias
+    });
+
+    enlace.addEventListener("mouseleave", () => {
+        // Restaura la posición original cuando el mouse sale del enlace
+        enlace.style.transform = "translateY(0)";
+    });
+}); */

@@ -1,79 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 body {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background: #000000;
+    color: #fff;
 }
 
-/* =========================  ESTILOS HEADER  ========================= */
-#header {
-    background: url(../sources/header.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 50vh;
+/* =========================  ESTILOS BARRA NAVEGACION  ========================= */
+.icono-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.titulo {
-    font-size: 50px!important;
+.icono-menu:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 251, 255, 0.9);
 }
-.hola {
-/*     border: 5px solid red; */
-    width: 80%;
+.rotado {
+    transform: rotate(90deg) !important;
+    box-shadow: 0 0 15px 5px rgba(255, 155, 55, 0.9);
+
+}
+#navbar-start {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.op-menu {
+    padding: 10px 14px;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: 500ms ease;
+}
+.im {color: #ffce69;}
+
+.color_menu {background-color: rgba(3, 3, 3, 0.572);}
+.color_menu .op-menu:hover {
+    color: rgb(48, 237, 244);
+    box-shadow: 0 -10px 15px rgba(0, 114, 255, 0.8), 0 10px 15px rgba(0, 114, 255, 0.8),
+        -10px 0 15px rgba(0, 114, 255, 0.8), 10px 0 15px rgba(0, 114, 255, 0.8);
+}
+.color_menu .op-menu:active {
+    transition: 0.1s ease;
+    color: #ffffff;
+}
+.color_menu:hover .op-menu:not(:hover) {
+    color: white;
+    opacity: 0.4;
+    filter: blur(1.7px);
 }
 
-/* =========================  ESTILOS CONTENIDO ========================= */
-.despues_header {
-    color: #ffce69;
-    font-size: 50px!important;
-}
+.menu_desplegado {background-color: rgb(0, 0, 0);}
+.menu_desplegado .op-menu {color: #ffffff;}
+.menu_desplegado .op-menu:hover {color: #ffce69;}
 
-
-/* =========================  ESTILOS PRODUCTOS ========================= */
-
-/* .card {
-    position: relative;
+@media(max-width: 422px) {
+    #barrita {
+        height: 110px;
+    }
+    #img_logo {
+        width: 190px;
+    }
+    #contenedor_informacion {
+        padding: 0;
+        margin: 0;
+    }
+    #logo_footer {
+        width: 210px;
+        height: 90px;
+    }
+    #apple,#twitter,#github,#facebook {
+        margin: 6px 6px !important;
+        padding: 3px 4px !important;
+        font-size: 30px !important;
+    }
 }
-.contain-image {
-    height: 50%;
-    background-color: #d9534f;
-} */
-
-.image {
-    height: 100% !important;
-    width: 100% !important;
-}
-/* .card .h-100 .p-1 .card-img-top .image{
-    width: 255px !important;
-    height: 233px !important;
-} */
-/* .imagen_tarjeta:hover {
-    background-image: linear-gradient(to top, #d9534f, #d9534f);
-} */
-
-.card-text {
-    font-family: 'Rubik', sans-serif;
-    word-spacing: -2.2px;
-    line-height: 1;
-    font-size: 17px;
-    font-weight: 500;
-}
-.precio {
-    font-size: 25px;
-    font-weight: bolder;
-}
-.color_tarjeta {
-    background-color: #ffce69;
-}
-.color_boton {
-    background-color: #3bceda;
-}
-
 /* =========================  ESTILOS PIE DE PAGINA  ========================= */
+#separador_footer {
+    height: 2vh;
+    background-color: #000000;
+}
 
 #contenedor_pie_pagina {background-color: rgb(0, 0, 0); color: #fff;}
 .quitar_raya a {
     text-decoration: none;
-    color: rgb(255, 137, 68);
+    color: #ffce69;
 }
 .quitar_raya a:hover {
     text-decoration: underline;
@@ -85,11 +107,11 @@ body {
 }
 .politicas a:hover {
     text-decoration: underline;
-    color: rgb(255, 137, 68);
+    color: #ffce69;
 }
 .lin {border-top: 1px solid rgb(255, 255, 255);}
 :root {
-    --icon-size: 40px;
+    --icon-size: 35px;
     --icon-padding: 5px 7px;
     --icon-margin: 10px 20px;
     --icon-text-shadow: 0 0 35px #0072ff, 0 0 75px #0072ff, 0 0 105px #0072ff, 0 0 140px #0072ff;
@@ -113,11 +135,102 @@ body {
 #twitter {animation-delay: 0.4s;}
 #facebook {animation-delay: 0.9s;}
 #github {animation-delay: 0.5s;}
-@keyframes animate {
-    from {
-        filter: hue-rotate(0deg)
+
+/* =========================  ESTILOS HEADER  ========================= */
+#contenedor_titulo {
+    height: 40vh;
+    width: 100%;
+    background: url(../sources/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*#header {
+    background: url(../sources/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+.titulo {
+    font-size: 50px!important;
+}
+.hola {
+/*     border: 5px solid red; 
+width: 80%;
+}
+*/
+
+/* =========================  ESTILOS CONTENIDO ========================= */
+.despues_header {
+    color: #ffce69;
+    font-size: 50px!important;
+}
+
+
+/* =========================  ESTILOS PRODUCTOS ========================= */
+
+/* .card {
+    position: relative;
+}
+.contain-image {
+    height: 50%;
+    background-color: #d9534f;
+} */
+/* .contenedor_tarjeta {
+    max-height: fit-content;
+    max-width: fit-content;
+}
+.image {
+    height: 100% !important;
+    width: 100% !important;
+} */
+/* .card .h-100 .p-1 .card-img-top .image{
+    width: 255px !important;
+    height: 233px !important;
+} */
+/* .imagen_tarjeta:hover {
+    background-image: linear-gradient(to top, #d9534f, #d9534f);
+} */
+
+@media (max-width:335px) {
+
+    .card-text {
+        padding: 0 2px;
+        margin: 0;
+        font-size: 13px;
+        font-weight: 400;
     }
-    to {
-        filter: hue-rotate(360deg)
+    .precio {
+        padding: 0 2px;
+        margin: 0;
+        font-size: 18px;
+        font-weight: bolder;
     }
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+    .color_boton::after {
+        content: "Buy";
+        color: #0072ff;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.card-text {
+    font-family: 'Rubik', sans-serif;
+    word-spacing: -2.2px;
+    line-height: 1;
+    font-size: 17px;
+    font-weight: 500;
+}
+.precio {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.color_tarjeta {
+    background-color: #ffce69;
+}
+.color_boton {
+    background-color: #3bceda;
 }

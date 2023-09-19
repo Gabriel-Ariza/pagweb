@@ -19,28 +19,55 @@
 
 <body>
 
-<!--==============================  TITULO  ==============================-->
+<!--==============================  BARRA NAVEGACION  ==============================-->
 
-    <header>
-        <div class="container-fluid d-flex" id="header">
-            <div class="row mx-5 align-self-end hola">
-                <div class="align-self-end">
-                    <h1 class="titulo mb-5 ps-4">Las Preparaciones De La Casa</h1>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="pb-0 pt-5 despues_header">
-                <hr style="border-color: #ffce69; border-width: 3px;">
-                <div class="ps-1 pb-1 mb-5">
-                    <h1 class="ps-4 ms-5">NUESTRAS RECETAS</h1>
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg fixed-top p-0 color_menu" id="barrita">
+    <div class="container ps-0 d-flex align-items-center">
+        <a href="#" class="navbar-brand pb-2 m-0">
+            <img src="sources/logo.png" id="img_logo" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-start"
+            aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon icono-menu animated" id="miIcono"></span>
+        </button>
+        <div class="collapse navbar-collapse p-2 m-0 h-100" id="navbar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly align-items-center">
+                <li class="nav-item"><a href="./index.html" class="op-menu im">Inicio</a></li>
+                <li class="nav-item"><a href="./products.html" class="op-menu ">Productos</a></li>
+                <li class="nav-item"><a href="./location.html" class="op-menu im">Ubicaciones</a></li>
+                <li class="nav-item"><a href="./receipes.html" class="op-menu">Recetas</a></li>
+                <li class="nav-item"><a href="./contact.html" class="op-menu im">Contáctanos</a></li>
+            </ul>
         </div>
     </div>
+</nav>
+
+<!--==============================  TITULO  ==============================-->
+
+    <section id="contenedor_titulo">
+            
+    </section>
+    <!-- </section>
+        <header>
+            <div class="container-fluid d-flex" id="header">
+                <div class="row mx-5 align-self-end hola">
+                    <div class="align-self-end">
+                        <h1 class="titulo mb-5 ps-4">Las Preparaciones De La Casa</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="pb-0 pt-5 despues_header">
+                    <hr style="border-color: #ffce69; border-width: 3px;">
+                    <div class="ps-1 pb-1 mb-5">
+                        <h1 class="ps-4 ms-5">NUESTRAS RECETAS</h1>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
 <!--==============================  CONTENIDO RECETAS  ==============================-->
 
     <div class="container" id="contenedor_receta1">
@@ -227,12 +254,13 @@
 
 <!--==============================  PIE DE PAGINA  ==============================-->
 
+    <div id="separador_footer"></div>
     <footer>
         <div class="container-fluid pt-3" id="contenedor_pie_pagina">
             <div class="row">
                 <div class="col-md-6 pe-5">
                     <div class="mb-4">
-                        <img src="sources/logo2.png">
+                        <img src="sources/logo2.png" id="logo_footer">
                     </div>
                     <h5 class="ps-3">La Mejor Heladería</h5>
                     <p class="mb-3 ps-3">
@@ -247,7 +275,6 @@
                         © 2023 Todos los derechos reservados
                     </p>
                 </div>
-
                 <div class="col-md-6 ps-3" id="contenedor_iconos">
                     <h4 class="text-center mb-2">Nuestras Redes Sociales</h4>
                     <div class="d-flex justify-content-center align-items-center mb-4">
@@ -256,32 +283,29 @@
                         <a href="https://github.com" target="_blank"><i class="fa-brands fa-twitter" id="github"></i></a>
                         <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-tiktok" id="facebook"></i></a>
                     </div>
-
                     <div class="row mt-5">
                         <div class="col-lg-7">
-
                             <div class="row quitar_raya">
                                 <h5 class="text-center">Categorias principales</h5>
                                 <hr>
                                 <div class="col-sm-6">
-                                    <a href="" class=" ps-2">productos</a> <br>
-                                    <a href="" class=" ps-2">Recetas</a> <br>
-                                    <a href="" class=" ps-2">Info</a>
+                                    <a href="./products.html" class="ps-2">productos</a> <br>
+                                    <a href="./receipes.html" class="ps-2">Recetas</a> <br>
+                                    <a href="https://api.whatsapp.com/send?phone=573223426718&text=Hola%20quiero%20informacion%20sobre%20sus%20productos!" class="ps-2">Info</a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <a href="" class=" ps-2">Eventos</a> <br>
-                                    <a href="" class=" ps-2">Contacto</a>
+                                    <a href="https://api.whatsapp.com/send?phone=573223426718&text=Hola%20quiero%20informacion%20para%20eventos!" class="ps-2">Eventos</a> <br>
+                                    <a href="./contact.html" class="ps-2">Contacto</a>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-lg-5 politicas">
                             <h5 class="text-center mb-0 pb-0">Políticas</h5>
                             <hr class="mt-2">
                             <div class="col-md-12">
-                                <a href="" class="ps-2">Información</a> <br>
-                                <a href="" class="ps-2">Condiciones</a> <br>
-                                <a href="" class="ps-2">Privacidad</a>
+                                <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso" class="ps-2">Información</a> <br>
+                                <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso" class="ps-2">Condiciones</a> <br>
+                                <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso" class="ps-2">Privacidad</a>
                             </div>
                         </div>
                     </div>
@@ -295,5 +319,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>    
-    <script src="js/receipes.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/receipes.js"></script>
 </body>

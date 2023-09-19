@@ -13,8 +13,7 @@ body {
     color: #fff;
 }
 
-
-/* =========================  ESTILOS HEADER  ========================= */
+/* =========================  ESTILOS BARRA NAVEGACION  ========================= */
 .icono-menu {
     background-color: #fff;
     border-radius: 5px;
@@ -35,153 +34,67 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
-li .op-menu {
-    text-decoration: none;
-    color: rgb(255, 155, 55);
-}
-li .op-menu:hover {
-    color: rgb(55, 222, 255);
-}
-.img-cacarro {
-    height: 300px;
-    width: 300px;
-}
-.navbar a {
+.op-menu {
+    padding: 10px 14px;
     font-weight: 600;
     font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: 500ms ease;
 }
-/* =========================  ESTILOS CONTENIDO ========================= */
-#contenedor {
-    height: 40vh;
-    width: 100%;
-    background: url(../sources/header.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+.im {color: #ff2640;}
+
+.color_menu {background-color: rgba(3, 3, 3, 0.411);}
+.color_menu .op-menu:hover {
+    color: rgb(48, 237, 244);
+    box-shadow: 0 -10px 15px rgba(0, 114, 255, 0.8), 0 10px 15px rgba(0, 114, 255, 0.8),
+        -10px 0 15px rgba(0, 114, 255, 0.8), 10px 0 15px rgba(0, 114, 255, 0.8);
 }
+.color_menu .op-menu:active {
+    transition: 0.1s ease;
+    color: #ffffff;
+}
+.color_menu:hover .op-menu:not(:hover) {
+    color: white;
+    opacity: 0.4;
+    filter: blur(1.7px);
+}
+
+.menu_desplegado {background-color: rgb(0, 0, 0);}
+.menu_desplegado .op-menu {color: #ffffff;}
+.menu_desplegado .op-menu:hover {color: #ff2640;}
+
+@media(max-width: 422px) {
+    #barrita {
+        height: 110px;
+    }
+    #img_logo {
+        width: 190px;
+    }
+    #contenedor_informacion {
+        padding: 0;
+        margin: 0;
+    }
+    #logo_footer {
+        width: 210px;
+        height: 90px;
+    }
+    #apple,#twitter,#github,#facebook {
+        margin: 6px 6px !important;
+        padding: 3px 4px !important;
+        font-size: 30px !important;
+    }
+}
+/* =========================  ESTILOS PIE DE PAGINA  ========================= */
 #separador_footer {
     height: 2vh;
     background-color: #000000;
 }
 
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-.logo {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 0.4em;
-    margin-bottom: 0.7em;
-}
-
-.logo span {
-    color: #B70E21;
-}
-
-.contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-}
-
-.contact-wrapper > * {
-    padding: 1em;
-}
-
-.contact-form {
-    background: #222222;
-}
-
-.contact-form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contact-form form label {
-    display: block;
-}
-
-.contact-form form p {
-    margin: 0;
-    padding: 1em;
-}
-
-.contact-form form .block {
-    grid-column: 1 / 3;
-}
-
-.contact-form form button,
-.contact-form form input,
-.contact-form form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #d63031;
-}
-
-.contact-form form button {
-    background: #B70E21;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-    background: #d63031;
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-
-/* CONTACT INFO */
-.contact-info {
-    background: #000;
-}
-
-.contact-info h4, .contact-info ul, .contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
-}
-
-/* LARGE SIZE */
-@media(min-width: 900px) {
-    #separador_footer {
-        height: 8vh;
-        background-color: #181818;;
-    }
-    #contenedor_informacion {
-        padding: 0 4em;
-    }
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .contact-wrapper > * {
-        padding: 2em;
-    }
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-    }
-}
-
-/* =========================  ESTILOS PIE DE PAGINA  ========================= */
-
 #contenedor_pie_pagina {background-color: rgb(0, 0, 0); color: #fff;}
 .quitar_raya a {
     text-decoration: none;
-    color: rgb(255, 137, 68);
+    color: rgb(255, 95, 114)
 }
 .quitar_raya a:hover {
     text-decoration: underline;
@@ -193,11 +106,11 @@ ul {
 }
 .politicas a:hover {
     text-decoration: underline;
-    color: rgb(255, 137, 68);
+    color: rgb(255, 95, 114)
 }
 .lin {border-top: 1px solid rgb(255, 255, 255);}
 :root {
-    --icon-size: 40px;
+    --icon-size: 35px;
     --icon-padding: 5px 7px;
     --icon-margin: 10px 20px;
     --icon-text-shadow: 0 0 35px #0072ff, 0 0 75px #0072ff, 0 0 105px #0072ff, 0 0 140px #0072ff;
@@ -221,11 +134,109 @@ ul {
 #twitter {animation-delay: 0.4s;}
 #facebook {animation-delay: 0.9s;}
 #github {animation-delay: 0.5s;}
-/* @keyframes animate {
-    from {
-        filter: hue-rotate(0deg)
+
+/* =========================  ESTILOS HEADER  ========================= */
+#contenedor_titulo {
+    height: 40vh;
+    width: 100%;
+    background: url(../sources/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* =========================  ESTILOS CONTENIDO ========================= */
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.logo {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0.4em;
+    margin-bottom: 0.7em;
+}
+.logo span {
+    color: #B70E21;
+}
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+.contact-wrapper > * {
+    padding: 1em;
+}
+.contact-form {
+    background: #222222;
+}
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-form form label {
+    display: block;
+}
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+.contact-form form button {
+    background: #B70E21;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+.contact-info {
+    background: #000;
+}
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+/* LARGE SIZE */
+@media(min-width: 900px) {
+    #separador_footer {
+        height: 8vh;
+        background-color: #181818;;
     }
-    to {
-        filter: hue-rotate(360deg)
+    #contenedor_informacion {
+        padding: 0 4em;
     }
-} */
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
