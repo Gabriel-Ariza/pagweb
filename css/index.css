@@ -190,6 +190,15 @@ body {
     bottom: 220px;
     z-index: 2;
 }
+
+@media (max-width:800px) {
+    .carousel-item {
+        min-height: 150px;
+        max-height: 500px;
+    }
+}
+
+
 .carousel-caption h5 {
     font-size: 70px;
     font-weight: 600;
