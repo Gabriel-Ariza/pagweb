@@ -61,7 +61,7 @@ body {
 
 .menu_desplegado {background-color: rgb(0, 0, 0);}
 .menu_desplegado .op-menu {color: #ffffff;}
-.menu_desplegado .op-menu:hover {color: #8CC4DF;}
+.menu_desplegado .op-menu:hover {color: #85d6ff;}
 
 @media(max-width:422px) {
     #barrita {
@@ -165,6 +165,23 @@ body {
     background-position: center;
 }*/
 /* =========================  ESTILOS CONTENIDO ========================= */
+
+#contain_intro {
+    width: 100%;
+    height: 60vh;
+    background-color: #F2B274;
+}
+@media (max-width:1000px) {
+    #contain_intro {
+        height: 40vh;
+    }
+}
+@media (max-width:800px) {
+    #contain_intro {
+        display: none;
+    }
+}
+
 .carousel-item {
     min-height: 400px;
     max-height: 600px;
